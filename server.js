@@ -4,8 +4,8 @@ const hbs = require('nodemailer-handlebars');
 let transporter = nodemailer.createTransport({
     service: 'hotmail',
     auth: {
-        user: 'ws-gen-11@outlook.com', 
-        pass: 'ws-gen-edinaeset'
+        user: '', 
+        pass: ''
     }
 });
 
@@ -16,8 +16,8 @@ transporter.use('compile', hbs({
 
 
 let mailOptions = {
-    from: 'ws-gen-11@outlook.com', 
-    to: 'ws-gen-11@outlook.com', 
+    from: '', 
+    to: '', 
     subject: 'Nodemailer - Test',
     text: 'It works!!',
     template: 'index',
